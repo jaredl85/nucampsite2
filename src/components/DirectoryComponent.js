@@ -11,7 +11,7 @@ class Directory extends Component {
     }
 
     onCampsiteSelect(campsite) {
-        this.setState({selectedCampsite: campsite});
+        this.setState({ selectedCampsite: campsite });
     }
 
     // renderSelectedCampsite(campsite) {
@@ -36,14 +36,14 @@ class Directory extends Component {
                     <Card onClick={() => this.onCampsiteSelect(campsite)}>
                         <CardImg width="100%" src={campsite.image} alt={campsite.name} />
                         <CardImgOverlay>
-                        <CardTitle>{campsite.name}</CardTitle>
+                            <CardTitle>{campsite.name}</CardTitle>
                         </CardImgOverlay>
                     </Card>
                 </div>
             );
         });
 
-        return(
+        return (
             <div className="container">
                 <div className="row">
                     {directory}
